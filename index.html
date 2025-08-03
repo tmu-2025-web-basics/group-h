@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>ASOBIBA PLAYTIME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- 前置き背景 - 長く残す -->
+<section class="intro-background" id="intro-bg">
+</section>
+
+    <!-- 前置きコンテンツ - 早く消える -->
+<section class="intro-content-section" id="intro-content">
+        <!-- ロゴのみ表示 -->
+        <img src="images/logo.png" alt="ロゴ" class="intro-logo" id="intro-logo">
+</section>
+
+    <!-- メインページ -->
+    <section class="main-section" id="main">
+        <!-- 前置きテキストセクション（前置きページから移動） -->
+        <section class="intro-text-section" id="intro-text-section">
+            <h1 class="main-intro-title">遊び心、忘れていませんか？</h1>
+            <p class="main-intro-text">
+                懐かしい気持ちがよみがえる、<br>
+                魅力的な公園の遊具を集めました。<br>
+                気になる遊具たち、<br>
+                のぞいてみてください。<br>
+            </p>
+            <!-- スクロール促進矢印 -->
+            <div class="scroll-prompt" id="scroll-prompt">
+                SCROLL
+            </div>
+        </section>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+            <button class="hamburger-btn" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    <!-- サイドメニュー -->
+    <nav class="side-menu" id="side-menu">
+        
+        <ul class="menu-list">
+            <li><a href="#top">トップ</a></li>
+            <li class="menu-item-with-submenu">
+            <button class="submenu-toggle" id="playground-toggle">
+                遊具リスト <span class="arrow">▼</span>
+            </button>
+            <ul class="submenu" id="playground-submenu">
+                <li><a href="kisha/index.html">汽車</a></li>
+                <li><a href="oni/index.html">鬼</a></li>
+                <li><a href="tako/index.html">たこ</a></li>
+                <li><a href="earth/index.html">地球儀</a></li>
+                <li><a href="hammock/index.html">虹のハンモック</a></li>
+                <li><a href="boots/index.html">大きな長靴</a></li>
+                <li><a href="dragon/index.html">ドラゴンスライダー</a></li>
+                <li><a href="roller/index.html">ローラー滑り台</a></li>
+            </ul>
+        </li>
+            <li><a href="ranking/index.html">ランキング</a></li>
+        </ul>
+    </nav>
+
+    <!-- オーバーレイ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <a href="#top" class="main-title-link" id="main-title-link">
+    <img src="images/logo.png" alt="メインタイトル" class="main-title" id="main-title">
+</a>
+
+<div class="map-title">Map</div>
+
+    <div class="map-container">
+        <img src="images/map.png" alt="地図" class="main-photo">
+
+        <!-- 遊具の配置 -->
+        <a href="kisha/index.html" class="playground-item train-item">
+            <img src="images/kisha.png" alt="汽車" class="playground-icon">
+        </a>
+        
+        <a href="oni/index.html" class="playground-item oni-item">
+            <img src="images/oni.png" alt="鬼" class="playground-icon">
+        </a>
+        
+        <a href="tako/index.html" class="playground-item tako-item">
+            <img src="images/tako.png" alt="たこ" class="playground-icon">
+        </a>
+        
+        <a href="earth/index.html" class="playground-item earth-item">
+            <img src="images/earth.png" alt="地球" class="playground-icon">
+        </a>
+        
+        <a href="hammock/index.html" class="playground-item hammock-item">
+            <img src="images/hammock.png" alt="ハンモック" class="playground-icon">
+        </a>
+
+        <a href="boots/index.html" class="playground-item nagagutsu-item">
+            <img src="images/boots.png" alt="長靴" class="playground-icon">
+        </a>
+        
+        <a href="dragon/index.html" class="playground-item pyramid-item">
+            <img src="images/dragon.png" alt="ドラゴン" class="playground-icon">
+        </a>
+        
+        <a href="roller/index.html" class="playground-item slide-item">
+            <img src="images/roller.png" alt="長いすべり台" class="playground-icon">
+        </a>
+    </div>
+
+    <div class="nav-title">List</div>
+
+    <div class="bottom-nav">
+        <div class="nav-dots-container">
+            <div class="nav-dots-wrapper">
+                <!-- 1セット目 -->
+                <a href="kisha/index.html" class="nav-dot" data-index="0"></a>
+                <a href="earth/index.html" class="nav-dot" data-index="1"></a>
+                <a href="hammock/index.html" class="nav-dot" data-index="2"></a>
+                <a href="boots/index.html" class="nav-dot" data-index="3"></a>
+                <a href="roller/index.html" class="nav-dot" data-index="4"></a>
+                <a href="oni/index.html" class="nav-dot" data-index="5"></a>
+                <a href="dragon/index.html" class="nav-dot" data-index="6"></a>
+                <a href="tako/index.html" class="nav-dot" data-index="7"></a>
+                <!-- 2セット目（ループ用） -->
+                <a href="kisha/index.html" class="nav-dot" data-index="0"></a>
+                <a href="earth/index.html" class="nav-dot" data-index="1"></a>
+                <a href="hammock/index.html" class="nav-dot" data-index="2"></a>
+                <a href="boots/index.html" class="nav-dot" data-index="3"></a>
+                <a href="roller/index.html" class="nav-dot" data-index="4"></a>
+                <a href="oni/index.html" class="nav-dot" data-index="5"></a>
+                <a href="dragon/index.html" class="nav-dot" data-index="6"></a>
+                <a href="tako/index.html" class="nav-dot" data-index="7"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ranking-section">
+
+        <h2 class="ranking-title">Ranking</h2>
+
+        <a href="ranking/index.html" class="ranking-item-1">
+            <div class="ranking-number-boots">ビジュアル No.1</div>
+            <img src="images/boots.jpg" alt="ながぐつ" class="ranking-photo">
+        </a>
+
+        
+    <!-- 2〜4位のレイアウト -->
+    <div class="ranking-bottom">
+        <!-- 左側（2位と3位） -->
+        <div class="ranking-left">
+            <a href="ranking/index.html" class="ranking-item-2">
+                <div class="ranking-number-earth">ワクワク No.1</div>
+                <img src="images/earth.jpg" alt="地球" class="ranking-photo">
+            </a>
+            <a href="ranking/index.html" class="ranking-item-3">
+                <div class="ranking-number-oni">ビジュアル No.1</div>
+                <img src="images/oni.jpg" alt="鬼" class="ranking-photo">
+            </a>
+        </div>
+        
+        <!-- 右側（4位） -->
+        <a href="ranking/index.html" class="ranking-item-4">
+            <div class="ranking-number-kisha">安全 No.1</div>
+            <img src="images/kisha.jpg" alt="汽車" class="ranking-photo">
+        </a>
+    </div>
+
+    <!-- 5位と6位のコンテナ -->
+    <div class="ranking-bottom-row">
+        <a href="ranking/index.html" class="ranking-item-5">
+            <div class="ranking-number-tako">人気 No.1</div>
+            <img src="images/tako.jpg" alt="タコ" class="ranking-photo">
+        </a>
+
+        <a href="ranking/index.html" class="ranking-item-6">
+            <div class="ranking-number-more">Learn More</div>
+            <img src="images/background.png" alt="サムネイル" class="ranking-photo">
+        </a>
+    </div>
+    
+</div>
+
+<!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-header">
+                <a href="#top" class="footer-icon-link">
+                     <img src="images/logo-icon.png" alt="アイコン" class="footer-icon">
+                </a>
+                <div class="footer-title-container">
+                    <a href="#top" class="footer-title-link">
+                         <div class="footer-title">
+                             ASOBIBA  -PLAY TIME-
+                         </div>
+                    </a>
+               
+                    <div class="footer-right">
+                        <p class="footer-copyright">
+                            © COPYRIGHT 2025 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+
+    <!-- オーバーレイ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+
+</body>
+</html>
