@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>遊具詳細</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/evu8uzj.css">
+</head>
+<body>
+    <!-- ハンバーガーメニューボタン -->
+        <div class="hamburger-menu">
+            <button class="hamburger-btn" id="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- サイドメニュー -->
+    <nav class="side-menu" id="side-menu">
+
+        <ul class="menu-list">
+            <li><a href="../index.html">トップ</a></li>
+            <li class="menu-item-with-submenu">
+            <button class="submenu-toggle" id="playground-toggle">
+                遊具リスト <span class="arrow">▼</span>
+            </button>
+            <ul class="submenu" id="playground-submenu">
+                <li><a href="../kisha/index.html">汽車</a></li>
+                <li><a href="../oni/index.html">鬼</a></li>
+                <li><a href="../tako/index.html">たこ</a></li>
+                <li><a href="../earth/index.html">地球儀</a></li>
+                <li><a href="../hammock/index.html">虹のハンモック</a></li>
+                <li><a href="../boots/index.html">大きな長靴</a></li>
+                <li><a href="../dragon/index.html">ドラゴンスライダー</a></li>
+                <li><a href="../roller/index.html">ローラー滑り台</a></li>
+            </ul>
+        </li>
+            <li><a href="../ranking/index.html">ランキング</a></li>
+        </ul>
+    </nav>
+
+    <!-- オーバーレイ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="top-bar"></div>
+    <div class="container">
+        <div class="title title-decoration">
+            鬼
+            <div class="title-subtitle">in 足立区舎人いきいき公園</div>
+        </div>
+        <div class="gap"></div>
+        <div class="flex-row">
+            <div class="main-img"></div>
+            <div class="gap"></div>
+            <div class="parameter-section">
+                <!-- 共通の数字表示 -->
+                <div class="parameter-numbers-header">
+                    <span class="parameter-number">1</span>
+                    <span class="parameter-number">2</span>
+                    <span class="parameter-number">3</span>
+                    <span class="parameter-number">4</span>
+                    <span class="parameter-number">5</span>
+                </div>
+                
+                <div class="parameter">
+                    <span class="parameter-label">ビジュアル</span>
+                    <div class="parameter-bar level-5">
+                        <div class="parameter-scale">
+                            <div class="parameter-line"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-circle" data-value="1"></div>
+                            <div class="parameter-circle" data-value="2"></div>
+                            <div class="parameter-circle" data-value="3"></div>
+                            <div class="parameter-circle" data-value="4"></div>
+                            <div class="parameter-circle" data-value="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parameter">
+                    <span class="parameter-label">人気度</span>
+                    <div class="parameter-bar level-1">
+                        <div class="parameter-scale">
+                            <div class="parameter-line"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-circle" data-value="1"></div>
+                            <div class="parameter-circle" data-value="2"></div>
+                            <div class="parameter-circle" data-value="3"></div>
+                            <div class="parameter-circle" data-value="4"></div>
+                            <div class="parameter-circle" data-value="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parameter">
+                    <span class="parameter-label">安全性</span>
+                    <div class="parameter-bar level-4">
+                        <div class="parameter-scale">
+                            <div class="parameter-line"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-circle" data-value="1"></div>
+                            <div class="parameter-circle" data-value="2"></div>
+                            <div class="parameter-circle" data-value="3"></div>
+                            <div class="parameter-circle" data-value="4"></div>
+                            <div class="parameter-circle" data-value="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parameter">
+                    <span class="parameter-label">ワクワク感</span>
+                    <div class="parameter-bar level-2">
+                        <div class="parameter-scale">
+                            <div class="parameter-line"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-circle" data-value="1"></div>
+                            <div class="parameter-circle" data-value="2"></div>
+                            <div class="parameter-circle" data-value="3"></div>
+                            <div class="parameter-circle" data-value="4"></div>
+                            <div class="parameter-circle" data-value="5"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parameter">
+                    <span class="parameter-label">迫力
+                    </span>
+                    <div class="parameter-bar level-5">
+                        <div class="parameter-scale">
+                            <div class="parameter-line"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-tick"></div>
+                            <div class="parameter-circle" data-value="1"></div>
+                            <div class="parameter-circle" data-value="2"></div>
+                            <div class="parameter-circle" data-value="3"></div>
+                            <div class="parameter-circle" data-value="4"></div>
+                            <div class="parameter-circle" data-value="5"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="playtime-banner">
+        <h2>ASOBIBA-playtime-</h2>
+    </div>
+        <div class="section-title">遊び方</div>
+        <div class="howto-container">
+            <div class="howto-row">
+                <div class="howto-img step1"></div>
+                <p class="howto-caption">1. まずは鬼の背後をとり、背中から侵入</p>
+            </div>
+            <div class="howto-row">
+                <div class="howto-img step2"></div>
+                <p class="howto-caption">2. 階段を登って覚悟を決める</p>
+            </div>
+            <div class="howto-row">
+                <div class="howto-img step3"></div>
+                <p class="howto-caption">3. わずか2秒ほどのスライドを楽しむ</p>
+            </div>
+        </div>
+        <!-- 「西村陸が行ってきた！」ラベル装飾 -->
+        <div class="report-row">
+          <span class="report-label">西村陸が行ってきた！</span>
+        </div>
+        
+        <!-- 手書き風レポートエリア -->
+        <div class="handwritten-report">
+            <div class="report-content">
+                <div class="report-slides">
+                    <div class="slide active">
+                        <div class="handwritten-lines">
+                            <div class="line">わざわざ東京の果てまで遠征して見てきた。</div>
+                            <div class="line">足立区舎人車人に会うこの鬼</div>
+                            <div class="line">いざ生で見てみるとその迫力には目を見張るものがあった。</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="handwritten-lines">
+                            <div class="line">しかし、遊ぶ子供は見当たらない</div>
+                            <div class="line">駅からこのに向かう際に幼稚園や小学校(公演の目の前)</div>
+                            <div class="line">あったので、期待をしていたがまさかの0人だった。</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="handwritten-lines">
+                            <div class="line">いざ滑ってみるとその理由が判明</div>
+                            <div class="line">この遊具はビジュアルに特化したあまり、遊具としての楽しさが</div>
+                            <div class="line">何一つとしてなかったのだ。</div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="handwritten-lines">
+                            <div class="line">地元の子供達も自分と同じような結論に達していた</div>
+                            <div class="line">と思うと感慨深いものがあった。しかし、見た目に関しては素晴らし</div>
+                            <div class="line">いと言わざるを得ないので、生で見たい人はぜひ行ってもらいたい</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-arrows">
+                    <button class="arrow prev">◀</button>
+                    <button class="arrow next">▶</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pattern-area">
+        <div class="map-image" id="mapImage"></div>
+    </div>
+    <!-- トップページへ戻るリンク -->
+        <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-header">
+                <a href="../index.html" class="footer-icon-link">
+                     <img src="../images/logo-icon.png" alt="アイコン" class="footer-icon">
+                </a>
+                <div class="footer-title-container">
+                    <a href="../index.html" class="footer-title-link">
+                         <div class="footer-title">
+                             ASOBIBA  -PLAY TIME-
+                         </div>
+                    </a>
+               
+                    <div class="footer-right">
+                        <p class="footer-copyright">
+                            © COPYRIGHT 2025 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
