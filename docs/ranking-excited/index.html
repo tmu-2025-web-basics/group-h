@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランキングサイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../ranking/styles.css">
+</head>
+<body>
+    <!-- ハンバーガーメニューボタン -->
+    <div class="hamburger-menu">
+        <button class="hamburger-btn" id="hamburger-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- サイドメニュー -->
+    <nav class="side-menu" id="side-menu">
+        <ul class="menu-list">
+            <li><a href="../index.html">トップ</a></li>
+            <li class="menu-item-with-submenu">
+                <button class="submenu-toggle" id="playground-toggle">
+                    遊具リスト <span class="arrow">▼</span>
+                </button>
+                <ul class="submenu" id="playground-submenu">
+                    <li><a href="../kisha/index.html">汽車</a></li>
+                    <li><a href="../oni/index.html">鬼</a></li>
+                    <li><a href="../tako/index.html">たこ</a></li>
+                    <li><a href="../earth/index.html">地球儀</a></li>
+                    <li><a href="../hammock/index.html">虹のハンモック</a></li>
+                    <li><a href="../boots/index.html">大きな長靴</a></li>
+                    <li><a href="../dragon/index.html">ドラゴンスライダー</a></li>
+                    <li><a href="../roller/index.html">ローラー滑り台</a></li>
+                </ul>
+            </li>
+            <li><a href="../ranking/index.html">ランキング</a></li>
+        </ul>
+    </nav>
+
+    <!-- オーバーレイ -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <div class="container">
+        <!-- メインタイトル -->
+
+        <a href="../index.html" class="main-title-link">
+            <img src="../images/logo.png" alt="メインタイトル" class="main-title">
+        </a>
+        <header class="main-header">
+            <h1>RANKING</h1>
+        </header>
+
+        
+
+        <!-- メインランキングセクション -->
+        <section class="main-ranking">
+            <p style="font-size: 2rem;">ワクワク度</p>
+            <p>子供がなんでもワクワクすると思ったら大間違い。</p>
+            <p>「あの遊具は面白そう」「あの遊具は遊んだ気がしない」</p>
+            <p></p>…そんな感覚はあの頃からあったのではないでしょうか。</p>
+            <p>ここでは時間を忘れて楽しめる、ワクワクする遊具を紹介します。</p>
+            <div class="ranking-grid">
+                <!-- 1位 (大きなカード) -->
+                <div class="rank-card rank-1">
+                    <div class="rank-number rank-first">1st</div>
+                    <div class="rank-image">
+                        <img src="../ranking/5.png" alt="地球儀">
+                    </div>
+                </div>
+
+                <!-- 2-5位 (小さなカード) -->
+                <div class="rank-grid-small">
+                    <div class="rank-card rank-2">
+                        <div class="rank-number rank-second">2nd</div>
+                        <div class="rank-image">
+                            <img src="../ranking/8.png" alt="スライダー">
+                        </div>
+                    </div>
+                    <div class="rank-card rank-3">
+                        <div class="rank-number rank-third">3rd</div>
+                        <div class="rank-image">
+                            <img src="../ranking/6.png" alt="三ツ沢">
+                        </div>
+                    </div>
+                    <div class="rank-card rank-4">
+                        <div class="rank-number rank-fourth">4th</div>
+                        <div class="rank-image">
+                            <img src="../ranking/7.png" alt="ハンモック">
+                        </div>
+                    </div>
+                    <div class="rank-card rank-5">
+                        <div class="rank-number rank-fourth">5th</div>
+                        <div class="rank-image">
+                            <img src="../ranking/4.png" alt="大きな長靴">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="comment-section">
+            <p style="font-size: 1.5rem;">COMMENT</p>
+            <p>ワクワク度堂々の１位は地球儀。遊具として最も誇らしい称号の一つかもしれませんね。</p>
+            <p>近年、危険性の指摘があって全国の公園からなくなりつつあるこの遊具ですが、皆さんは遊んだことがあるでしょうか？見かけたら遊んでみましょう。もしかしたら、今後できない体験になるかも。</p>
+            <p>このランキングでは、遊びの幅が広い遊具や、スリリングのある滑り台が人気でした。いつになっても滑り台は楽しいものですよね。</p>
+
+        </div>
+
+        <p style="font-size: 2.8rem;">Other rankings...</p>
+
+        <!-- カテゴリ別ランキング -->
+        <section class="category-rankings">
+
+            <!-- １、たこ、2きしゃ 、３、おに、４長靴、５：地球儀、６：光沢、７：ハンモック、８：ドラゴン-->
+            <a href="../ranking/index.html">
+            <div class="category-section">
+                <h2>総合ランキング</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/2.png" alt="汽車">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-second">2nd</div>
+                        <div class="category-image">
+                            <img src="../ranking/4.png" alt="大きな長靴">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-second">2nd</div>
+                        <div class="category-image">
+                            <img src="../ranking/1.png" alt="たこ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+            <!-- ビジュアル -->
+            <a href="../ranking-visual/index.html">
+            <div class="category-section">
+                <h2>ビジュアル</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/4.png" alt="大きな長靴">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/3.png" alt="鬼">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/2.png" alt="汽車">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+                        <!-- 混雑度 -->
+            <a href="../ranking-crowded/index.html">
+            <div class="category-section">
+                <h2>混雑度</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/1.png" alt="たこ">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-second">2nd</div>
+                        <div class="category-image">
+                            <img src="../ranking/2.png" alt="汽車">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-third">3rd</div>
+                        <div class="category-image">
+                            <img src="../ranking/7.png" alt="虹のハンモック">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+
+
+            <!-- 安全性 -->
+            <a href="../ranking-safety/index.html">
+            <div class="category-section">
+                <h2>安全性</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-number rank-first">1st</div>
+                        <div class="category-image">
+                            <img src="../ranking/2.png" alt="汽車">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-second">2nd</div>
+                        <div class="category-image">
+                            <img src="../ranking/4.png" alt="大きな長靴">
+                        </div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-number rank-third">3rd</div>
+                        <div class="category-image">
+                            <img src="../ranking/7.png" alt="虹のハンモック">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </a>
+
+           
+        </section>
+        
+       
+    <!-- 画像詳細モーダル -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-image-container">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="modal-info">
+                <h2 id="modalTitle" title="クリックして詳細ページへ"></h2>
+                <div id="modalDescription" class="modal-description"></div>
+                <div id="modalRanking" class="modal-ranking-info"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- トップページへ戻るリンク -->
+        <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-header">
+                <a href="../index.html" class="footer-icon-link">
+                     <img src="../images/logo-icon.png" alt="アイコン" class="footer-icon">
+                </a>
+                <div class="footer-title-container">
+                    <a href="../index.html" class="footer-title-link">
+                         <div class="footer-title">
+                             ASOBIBA  -PLAY TIME-
+                         </div>
+                    </a>
+               
+                    <div class="footer-right">
+                        <p class="footer-copyright">
+                            © COPYRIGHT 2025 
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
